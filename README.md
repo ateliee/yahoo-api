@@ -5,12 +5,12 @@ yahoo API(http://developer.yahoo.co.jp/)のPHPクラス版。
 ## 使い方
 ```
     "require": {
-        "ateliee/yahooAPI": "dev-master"
+        "ateliee/yahoo-api": "dev-master"
     }
 ```
 
 ```
-use yahooAPI\Auctions;
+use YahooAPI\Auctions;
 ...
 
 $auctions = new Auctions('appid','secret key');

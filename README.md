@@ -13,12 +13,12 @@ yahoo API(http://developer.yahoo.co.jp/)のPHPクラス版。
 use yahooAPI\Auctions;
 ...
 
-$ameba = new Auctions('appid','secret key');
+$auctions = new Auctions('appid','secret key');
 
-$categorys = $yahooa->request('categoryTree');
-$leaf = $yahooa->request('categoryLeaf',array('category' => '2084055844'));
-$selling = $yahooa->request('sellingList',array('sellerID' => '****'));
-$search = $yahooa->request('search',array('query' => '****'));
-$item = $yahooa->request('auctionItem',array('auctionID' => '****'));
+$categorys = $auctions->request('categoryTree');
+$leaf = $auctions->request('categoryLeaf',array('category' => '2084055844'));
+$selling = $auctions->request('sellingList',array('sellerID' => '****'));
+$search = $auctions->request('search',array('query' => '****'));
+$item = $auctions->request('auctionItem',array('auctionID' => '****'));
 
 ```

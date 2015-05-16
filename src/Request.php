@@ -1,6 +1,5 @@
 <?php
 namespace YahooAPI;
-require dirname(__FILE__)."/Response.php";
 
 abstract class Request{
     protected $version;

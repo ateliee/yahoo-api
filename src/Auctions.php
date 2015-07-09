@@ -1,6 +1,6 @@
 <?php
 namespace YahooAPI;
-require dirname(__FILE__)."/Request.php";
+require_once dirname(__FILE__)."/Request.php";
 
 class Auctions extends Request{
     static private $host = 'http://auctions.yahooapis.jp';

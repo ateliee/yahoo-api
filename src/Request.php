@@ -23,7 +23,7 @@ abstract class Request{
     {
         $this->appid = $appid;
         $this->service = $secret;
-        $this->output = self::$OUTPUT_PHP;
+        $this->output = self::$OUTPUT_XML;
         $this->version = 2;
     }
 

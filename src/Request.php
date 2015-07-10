@@ -75,6 +75,10 @@ abstract class Request{
             $response = null;
             if($output == self::$OUTPUT_XML){
                 $response = (new \SimpleXMLElement($result,LIBXML_NOCDATA));
+                if($response){
+                    // SimpleXMLElement to stdClass
+                    $response = json_decode(json_encode($response));
+                }
             }else if($output == self::$OUTPUT_PHP){
                 $response = $this->toObject(unserialize($result));
             }else if($output == self::$OUTPUT_JSON){
